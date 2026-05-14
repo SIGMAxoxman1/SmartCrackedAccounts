@@ -19,7 +19,7 @@ jobs:
 
       - name: Extract ZIP
         run: |
-          unzip -o SmartCrackedAccounts.zip -d extracted
+          unzip -o SmartCrackedAccounts.zip
 
       - name: Commit extracted files
         run: |
