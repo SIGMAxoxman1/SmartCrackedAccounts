@@ -19,7 +19,6 @@ jobs:
 
       - name: Extract ZIP
         run: |
-          mkdir extracted
           unzip -o SmartCrackedAccounts.zip -d extracted
 
       - name: Commit extracted files
