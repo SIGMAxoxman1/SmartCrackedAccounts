@@ -1,0 +1,78 @@
+# ======================================================
+#        SmartCrackedAccounts - config.yml
+#        الإصدار: 1.0.0
+#        البلجن بيعمل الملف ده تلقائياً أول مرة
+# ======================================================
+# دليل الألوان:
+#   &0أسود  &1كحلي  &2أخضر غامق  &3سماوي غامق
+#   &4أحمر غامق  &5بنفسجي  &6ذهبي  &7رمادي
+#   &8رمادي غامق  &9أزرق  &aأخضر  &bسماوي
+#   &cأحمر  &dوردي  &eأصفر  &fأبيض
+#   &lعريض  &oمائل  &nتحته خط  &mمشطوب  &rإعادة تعيين
+# ======================================================
+
+# =====================
+#   القائمة البيضاء
+# =====================
+whitelisted-players:
+  - "ExamplePlayer1"
+  - "ExamplePlayer2"
+
+# =====================
+#   إعدادات اللوبي
+# =====================
+lobby-world: "auth_lobby"
+
+lobby-location:
+  x: 0.5
+  y: 64.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+
+# =====================
+#   إعدادات الأمان
+# =====================
+login-timeout: 60
+min-password-length: 6
+max-wrong-attempts: 3
+protect-inventory: true
+prevent-movement: true
+prevent-chat: true
+prevent-damage: true
+
+# =====================
+#   إعدادات Floodgate
+# =====================
+use-floodgate: true
+
+# =====================
+#       الرسائل
+# =====================
+messages:
+  not-whitelisted: "&c\n &c✖ مش مسموحلك تدخل السيرفر ده!\n &eكلم الأدمن عشان يضيف اسمك.\n"
+  please-login: "&e► اكتب &a/login <كلمة السر> &eعشان تدخل!"
+  please-register: "&e► اكتب &a/register <كلمة السر> <تاكيد> &eعشان تسجل!"
+  reminder-login: "&7[تذكير] &eاكتب /login <كلمة السر>"
+  reminder-register: "&7[تذكير] &eاكتب /register <كلمة السر> <تاكيد>"
+  reminder-interval: 15
+  login-success: "&a✔ دخلت بنجاح! أهلاً بيك."
+  register-success: "&a✔ اتسجلت بنجاح! أهلاً بيك."
+  wrong-password: "&c✖ كلمة السر غلط! حاول تاني."
+  password-mismatch: "&c✖ كلمتين السر مش متطابقتين!"
+  password-too-short: "&c✖ كلمة السر قصيرة! لازم تبقى على الأقل &e%min% &cحروف."
+  already-logged-in: "&c✖ إنت داخل بالفعل!"
+  already-registered: "&c✖ إنت مسجل! استخدم /login"
+  not-registered: "&c✖ مش مسجل! استخدم /register"
+  too-many-attempts: "&c✖ كتير أوي محاولات خاطئة! اتصل تاني."
+  login-timeout: "&c\n ✖ خلص وقتك من غير ما تعمل login!\n &eاتصل بالسيرفر تاني.\n"
+  admin-added: "&a✔ اتضاف &e%player% &aللقائمة بنجاح!"
+  admin-removed: "&c✔ اتشال &e%player% &cمن القائمة!"
+  admin-already-exists: "&c✖ &e%player% &cموجود في القائمة بالفعل!"
+  admin-not-found: "&c✖ &e%player% &cمش موجود في القائمة!"
+  admin-list-header: "&a&l=== قائمة الكراك المسموح بيهم ==="
+  admin-list-entry: "&7- &f%player%"
+  admin-list-empty: "&cالقائمة فاضية!"
+  admin-list-footer: "&7المجموع: &f%player% &7لاعب"
+  admin-no-permission: "&c✖ مش عندك صلاحية تعمل ده!"
+  admin-usage: "&cالاستخدام: &f/cracklist <add|remove|list> [name]"
