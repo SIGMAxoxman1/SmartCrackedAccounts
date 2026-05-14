@@ -22,13 +22,6 @@ jobs:
           mkdir extracted
           unzip -o SmartCrackedAccounts.zip -d extracted
 
-      - name: Move files to repo root
-        run: |
-          shopt -s dotglob
-          mv extracted/* .
-          rm -rf extracted
-          rm -f SmartCrackedAccounts.zip
-
       - name: Commit extracted files
         run: |
           git config --global user.name "github-actions[bot]"
