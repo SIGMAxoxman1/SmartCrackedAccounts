@@ -1,0 +1,30 @@
+name: SmartCrackedAccounts
+version: '1.0.0'
+main: dev.smartcracked.SmartCrackedAccounts
+api-version: '1.21'
+description: Whitelist system for cracked players with secure login/register
+author: YourName
+
+softdepend:
+  - floodgate
+  - Geyser-Spigot
+
+commands:
+  cracklist:
+    description: Manage the cracked players whitelist
+    usage: /cracklist <add|remove|list> [name]
+    permission: sca.admin
+  # نضيف login و register عشان السيرفر يعرفهم ومش يلوّنهم أحمر
+  login:
+    description: Login to your account
+    usage: /login <password>
+    aliases: [l]
+  register:
+    description: Register a new account
+    usage: /register <password> <confirm>
+    aliases: [reg]
+
+permissions:
+  sca.admin:
+    description: Can manage the cracked whitelist
+    default: op
